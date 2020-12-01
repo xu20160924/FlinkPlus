@@ -7,7 +7,7 @@ The encapsulation of Flink framework.
 ## chat
 
 scan code join to group 
-<div align="center"><img width="150" height="150" src="https://github.com/xu20160924/FlinkPlus/blob/master/doc/image/ww.jpg"/></div>
+<div align="center"><img width="150" height="150" src="https://github.com/xu20160924/FlinkPlus/blob/main/doc/image/301606807104.jpg"/></div>
 
 
 
