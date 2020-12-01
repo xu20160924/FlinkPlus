@@ -12,7 +12,11 @@ public enum FpErrorEnum {
     // common status
     SUCCESS("00000", "success"),
     FAILED("99999", "failed"),
-    UNKNOWN("99998", "unkown");
+    UNKNOWN("99998", "unkown"),
+
+    PARAMETER_EMPTY("99997", "paramter none");
+
+
 
 
     private String msg;
