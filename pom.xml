@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fp</groupId>
+    <artifactId>FlinkPlus</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>fp-common</module>
+        <module>fp-core</module>
+        <module>fp-util</module>
+        <module>fp-monitor</module>
+    </modules>
+
+    <properties>
+        <package.name>FlinkPlus-${project.version}</package.name>
+        <profiles.dir>src/main/profiles</profiles.dir>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.report.outputEncoding>UTF-8</project.report.outputEncoding>
+        <project.report.inputEncoding>UTF-8</project.report.inputEncoding>
+        <project.build.targetJdk>1.8</project.build.targetJdk>
+        <jdk.version>1.8</jdk.version>
+        <flink.version>1.11.1</flink.version>
+        <scala.binary.version>2.11</scala.binary.version>
+        <scala.version>2.11.12</scala.version>
+        <hadoop.version>2.7.3</hadoop.version>
+        <snappy-java.version>1.1.4</snappy-java.version>
+        <org.apache.parquet.version>1.8.3</org.apache.parquet.version>
+        <hive.version>1.1.1</hive.version>
+        <log4j2.version>2.13.3</log4j2.version>
+        <fastjson.version>1.2.62</fastjson.version>
+        <logback.version>1.2.3</logback.version>
+        <log4j-over-slf4j.version>1.7.25</log4j-over-slf4j.version>
+        <gson.version>2.7</gson.version>
+        <junit.version>4.13.1</junit.version>
+        
+        <!-- self -->
+        <fp-common.version>1.0-SNAPSHOT</fp-common.version>
+        <fp-core.version>1.0-SNAPSHOT</fp-core.version>
+        <fp-util.version>1.0-SNAPSHOT</fp-util.version>
+        <fp-monitor.version>1.0-SNAPSHOT</fp-monitor.version>
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- self dependency -->
+            <dependency>
+                <groupId>com.fp</groupId>
+                <artifactId>fp-common</artifactId>
+                <version>${fp-common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fp</groupId>
+                <artifactId>fp-core</artifactId>
+                <version>${fp-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fp</groupId>
+                <artifactId>fp-util</artifactId>
+                <version>${fp-util.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fp</groupId>
+                <artifactId>fp-monitor</artifactId>
+                <version>${fp-monitor.version}</version>
+            </dependency>
+            <!-- self dependency -->
+
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
