@@ -12,5 +12,9 @@ scan code join to group
 
 
 ## introduction
+FlinkPlus基于Flink框架，进行一次封装，以提供基于Flink下的快速开发的能力，帮助开发者更快的达成任务，降低初始开发成本。 
 
 ## quickstart
+
+#### requirements
+- jdk1.8+

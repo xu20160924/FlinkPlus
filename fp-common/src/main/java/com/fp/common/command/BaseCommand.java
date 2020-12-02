@@ -19,7 +19,7 @@ public class BaseCommand implements Serializable {
     @Parameter(names = {"--help", "-help", "-h"}, help = true, description = "help info")
     private boolean help;
 
-    @Parameter(names = {"--version", "-version", "-v"}, description = "support framework client version")
+    @Parameter(names = {"--version", "-version", "-v"}, description = "FlinkPlus framework client version")
     private boolean verbose;
 
     public Map<String, String> getParams() {
